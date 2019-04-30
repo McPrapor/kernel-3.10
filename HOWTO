@@ -14,13 +14,18 @@ cd kernel-3.10
 export ARCH=arm64 
 export CROSS_COMPILE=/usr/local/bin/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CUSTOM_KERNEL_DCT=htc_v36bml_dugl
+#some legacy
 #export TARGET_BUILD_VARIANT=user TARGET_PRODUCT=v36bml_dugl MTK_ROOT_CUSTOM=../mediatek/custom/
-make v36bml_dugl_defconfig
-./build.sh
+#make v36bml_dugl_defconfig
+#./build.sh
+make O=out v36bml_dugl_defconfig
+make O=out dep
+make O=out -j$(nproc --all)
+
 
 
 Use Image.gz-dtb as kernel image
-./arch/arm64/boot/Image.gz-dtb ==> boot.img-kernel
+./out/arch/arm64/boot/Image.gz-dtb ==> boot.img-kernel
 
 
 
