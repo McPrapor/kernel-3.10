@@ -368,7 +368,6 @@ void __init paging_init(void)
 {
 	void *zero_page;
 
-	pr_notice("zzytest, pagint_init begin, arch/arm64/mm/mmu.c\n");
 	init_mem_pgprot();
 	map_mem();
 

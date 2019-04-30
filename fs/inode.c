@@ -1744,7 +1744,6 @@ void __init inode_init_early(void)
 {
 	unsigned int loop;
 
-	pr_notice("zzytest, inode_init_early begin, fs/inode.c\n");
 	/* If hashes are distributed across NUMA nodes, defer
 	 * hash allocation until vmalloc space is available.
 	 */

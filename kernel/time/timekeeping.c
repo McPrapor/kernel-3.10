@@ -777,7 +777,6 @@ void __init timekeeping_init(void)
 	unsigned long flags;
 	struct timespec now, boot, tmp;
 
-	pr_notice("zzytest, timekeeping_init begin, kernel/time/timekeeping.c\n");
 	read_persistent_clock(&now);
 
 	if (!timespec_valid_strict(&now)) {

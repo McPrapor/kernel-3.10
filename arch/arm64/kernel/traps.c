@@ -494,6 +494,5 @@ void __pgd_error(const char *file, int line, unsigned long val)
 
 void __init trap_init(void)
 {
-	pr_notice("zzytest, trap_init begin, empty, arch/arm64/kernel/traps.c\n");
 	return;
 }

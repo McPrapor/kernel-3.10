@@ -187,7 +187,6 @@ int parse_args(const char *doing,
 {
 	char *param, *val;
 
-	pr_notice("zzytest, parse_args begin, kernel/params.c\n");
 	/* Chew leading spaces */
 	args = skip_spaces(args);
 

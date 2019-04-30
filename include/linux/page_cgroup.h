@@ -38,7 +38,6 @@ extern void __init page_cgroup_init(void);
 void __init page_cgroup_init_flatmem(void);
 static inline void __init page_cgroup_init(void)
 {
-	pr_notice("zzytest, page_cgroup_init begin, empty, include/linux/page_cgroup.h\n");
 }
 #endif
 

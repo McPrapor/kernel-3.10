@@ -265,7 +265,6 @@ void __cpuinit calibrate_delay(void)
 	static bool printed;
 	int this_cpu = smp_processor_id();
 
-	pr_notice("zzytest, calibrate_delay begin, init/calibrate.c\n");
 	if (per_cpu(cpu_loops_per_jiffy, this_cpu)) {
 		lpj = per_cpu(cpu_loops_per_jiffy, this_cpu);
 		if (!printed)
